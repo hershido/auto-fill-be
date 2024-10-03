@@ -50,17 +50,13 @@ async function run() {
       {
         role: "user",
         parts: [
-          {
-            text: "I need to generate details for a business: business Type, business name ,business description, uniqueness description, business goals and target audience. These business details should vary across multiple industries, vary between cool and corporate. generate only one business at a time.\n",
-          },
+          { text: "I need to generate details for a business: business Type, business name ,business description, uniqueness description, business goals and target audience also business location which should be some random city in the world. These business details should vary across multiple industries, vary between cool and corporate. generate only one business at a time.\n" },
         ],
       },
       {
         role: "model",
         parts: [
-          {
-            text: '```json\n{"businessType": "Restaurant", "businessName": "The Hungry Alchemist", "businessDescription": "A modern gastropub serving inventive, globally inspired dishes with a focus on locally sourced ingredients and craft cocktails.", "uniquenessDescription": "We combine the warmth and comfort of a traditional pub with the culinary creativity and sophistication of a fine dining establishment. Our menu is constantly evolving, offering a unique and exciting experience every time you visit.", "businessGoals": "To become a renowned destination for food and drink enthusiasts in the city, known for our exceptional quality, innovative menu, and warm, inviting atmosphere.", "targetAudience": "Young professionals, foodies, and social groups seeking a unique and memorable dining experience."}\n\n```',
-          },
+          { text: "```json\n{\"businessType\": \"Restaurant\", \"businessName\": \"The Cozy Kettle\", \"businessDescription\": \"A charming cafe offering a warm and inviting atmosphere, serving artisanal coffee, pastries, and light bites. We focus on using fresh, local ingredients and creating a welcoming space for community gatherings.\", \"uniquenessDescription\": \"Our unique blend of vintage decor, cozy seating arrangements, and a carefully curated menu makes The Cozy Kettle a special destination for those seeking a respite from the hustle and bustle of everyday life.\", \"businessGoals\": \"To become a beloved local institution, known for its exceptional coffee, friendly service, and welcoming ambiance. We also aim to support local farmers and artisans by sourcing our ingredients responsibly.\", \"targetAudience\": \"Professionals, students, and residents seeking a comfortable space to work, relax, or meet with friends. We cater to both individual customers and small groups.\", \"businessLocation\": \"Edinburgh, Scotland\"}\n\n```" },
         ],
       },
     ],
